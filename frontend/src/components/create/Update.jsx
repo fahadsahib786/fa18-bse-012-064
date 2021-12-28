@@ -103,13 +103,13 @@ const Update = ({ match }) => {
                     style={{ display: "none" }}
                     onChange={(e) => setFile(e.target.files[0])}
                 />
-                <InputBase onChange={(e) => handleChange(e)} value={post.title} name='title' placeholder="Title" className={classes.textfield} />
+                <InputBase onChange={(e) => handleChange(e)} value={post.title} name='title' placeholder="Post Title" className={classes.textfield} />
                 <Button onClick={() => updateBlogPost()} variant="contained" color="primary">Update</Button>
             </FormControl>
 
             <TextareaAutosize
                 rowsMin={5}
-                placeholder="Tell your story..."
+                placeholder="Write your post description here"
                 className={classes.textarea}
                 name='description'
                 onChange={(e) => handleChange(e)} 

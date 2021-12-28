@@ -4,20 +4,20 @@ import { makeStyles, Box, Typography } from '@material-ui/core';
 const useStyle = makeStyles({
     image: {
         width: '100%',
-        background: `url(${'https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg'}) center/55% repeat-x #000`,
-        height: '50vh',
+        background: `url(${'https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGJhbm5lcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60'}) center/55% repeat-x #000`,
+        height: '60vh',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
         '& :first-child': {
             fontSize: 70,
-            color: '#FFFFFF',
+            color: '#000',
             lineHeight: 1
         },
         '& :last-child': {
             fontSize: 20,
-            background: '#FFFFFF',
+            // background: '#FFFFFF',
         }
     }
 })
@@ -29,7 +29,7 @@ const Banner = () => {
         <>
             <Box className={classes.image}>
                 <Typography>BLOG</Typography>
-                <Typography>Code for Interview</Typography>
+                <Typography>WELCOME TO MY BLOG</Typography>
             </Box>
         </>
     )

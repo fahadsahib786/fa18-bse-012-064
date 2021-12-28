@@ -88,9 +88,9 @@ const DetailView = ({ match }) => {
             <Typography className={classes.heading}>{post.title}</Typography>
 
             <Box className={classes.author}>
-                <Link to={`/?username=${post.username}`} className={classes.link}>
+                {/* <Link to={`/?username=${post.username}`} className={classes.link}>
                     <Typography>Author: <span style={{fontWeight: 600}}>{post.username}</span></Typography>
-                </Link>
+                </Link> */}
                 <Typography style={{marginLeft: 'auto'}}>{new Date(post.createdDate).toDateString()}</Typography>
             </Box>
 

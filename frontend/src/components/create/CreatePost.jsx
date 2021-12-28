@@ -43,7 +43,7 @@ const initialPost = {
     title: '',
     description: '',
     picture: '',
-    username: '',
+    // username: 'fahad',
     categories: '',
     createdDate: new Date()
 }
@@ -74,7 +74,7 @@ const CreatePost = () => {
         }
         getImage();
         post.categories = location.search?.split('=')[1] || 'All'
-        post.username = account;
+        // post.username = account;
     }, [file])
 
     const savePost = async () => {
@@ -100,13 +100,13 @@ const CreatePost = () => {
                     style={{ display: "none" }}
                     onChange={(e) => setFile(e.target.files[0])}
                 />
-                <InputBase onChange={(e) => handleChange(e)} name='title' placeholder="Title" className={classes.textfield} />
+                <InputBase onChange={(e) => handleChange(e)} name='title' placeholder="Post Title Here" className={classes.textfield} />
                 <Button onClick={() => savePost()} variant="contained" color="primary">Publish</Button>
             </FormControl>
 
             <TextareaAutosize
                 rowsMin={5}
-                placeholder="Tell your story..."
+                placeholder="Write your post description..."
                 className={classes.textarea}
                 name='description'
                 onChange={(e) => handleChange(e)} 

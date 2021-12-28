@@ -1,4 +1,3 @@
-
 import Post from '../model/post.js';
 
 
@@ -59,7 +58,7 @@ export const getAllPosts = async (request, response) => {
         else 
             posts = await Post.find({});
 
-            console.log('Hoe', posts)
+            console.log('Hi', posts)
         response.status(200).json(posts);
     } catch (error) {
         response.status(500).json(error)

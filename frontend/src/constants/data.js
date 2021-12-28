@@ -1,7 +1,9 @@
 export const categories = [
-    "Music",
-    "Movies",
-    "Sports",
-    "Tech",
-    "Fashion"
+    "Freelancing",
+    "Cryptocurrency",
+    "Internet",
+    "Blockchain",
+    "Cybersecurity",
+    "Cloud Computing",
+    "Metaverse"
 ];

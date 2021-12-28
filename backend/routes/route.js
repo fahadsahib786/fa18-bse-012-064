@@ -8,6 +8,7 @@ import { newComment, getComments, deleteComment } from '../controller/comment-co
 const router = express.Router();
 
 
+
 router.post('/create', createPost);
 router.put('/update/:id', updatePost);
 router.delete('/delete/:id', deletePost);
